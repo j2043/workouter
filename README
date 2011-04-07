@@ -1,0 +1,3 @@
+The idea is basic interval training.  30 seconds high, 30 seconds low, 30 high, 30 low, then 30 rest.
+
+So you have a workout specified in config/workouts where you list your high and your low activities.  You then run "script/mac-workout.rb basic" and it calls out what exercise you should be doing. 
