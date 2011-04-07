@@ -37,10 +37,10 @@ class Workouter
     do_segment("get ready", 10)
     @intervals.times do |count|
       say "#{ @intervals - count} left"
-      do_segment(workout["slow"].random_element)
-      do_segment(workout["fast"].random_element)
-      do_segment(workout["slow"].random_element)
-      do_segment(workout["fast"].random_element)
+      do_segment(get_action(:slow))
+      do_segment(get_action(:fast))
+      do_segment(get_action(:slow))
+      do_segment(get_action(:fast))
       do_segment("rest")
     end
     say("Done!")
