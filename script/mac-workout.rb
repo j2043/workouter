@@ -3,8 +3,8 @@
 require 'yaml'
 require 'activesupport'
 require './lib/mac.rb'
-
-i =  Workouter.new("basic")
+workout = ARGV[0]
+i =  Workouter.new(workout)
 i.run
 
 

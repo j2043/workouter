@@ -36,7 +36,7 @@ class Workouter
   def run
     do_segment("get ready", 10)
     @intervals.times do |count|
-      say "#{ @intervals - count} left"
+      say "#{ @intervals - count} segments left"
       do_segment(get_action(:slow))
       do_segment(get_action(:fast))
       do_segment(get_action(:slow))
