@@ -1,3 +1,5 @@
+circuits: 10
+
 fast:
  - jumping jacks
  - push ups
@@ -11,6 +13,7 @@ fast:
  - run in place
  - ball lift transfer
  - sumo squats
+ - arm elbows
 slow:
  - middle crunches
  - left crunches
