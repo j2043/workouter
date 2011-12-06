@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby 
 
+require 'rubygems'
 require 'yaml'
 require 'activesupport'
 require './lib/mac.rb'
