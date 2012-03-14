@@ -5,9 +5,9 @@ require 'activesupport'
 
 class Workouter
 
-  def initialize(workout_name)
+  def initialize(workout_name, segments=10)
     @workout = YAML::load_file("config/workouts/#{workout_name}.yml")
-    @intervals = 10
+    @intervals = segments 
     @actions = {}
   end
 

@@ -2,10 +2,15 @@
 
 require 'rubygems'
 require 'yaml'
-require 'activesupport'
+require 'thread'
+require 'active_support'
 require './lib/mac.rb'
 workout = ARGV[0]
-i =  Workouter.new(workout)
+segments = ARGV[1].to_i
+
+sements = 10 if segments == 0
+
+i =  Workouter.new(workout, segments)
 i.run
 
 
