@@ -8,7 +8,7 @@ require './lib/mac.rb'
 workout = ARGV[0]
 segments = ARGV[1].to_i
 
-sements = 10 if segments == 0
+segments = 10 if segments == 0
 
 i =  Workouter.new(workout, segments)
 i.run
