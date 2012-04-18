@@ -1,14 +1,28 @@
 #!/usr/bin/env ruby 
 
 require 'yaml'
-require 'activesupport'
+require 'active_support'
+require 'pp'
 
 class Workouter
 
   def initialize(workout_name, segments=10)
-    @workout = YAML::load_file("config/workouts/#{workout_name}.yml")
+    @workout = get_workout(workout_name)
     @intervals = segments 
     @actions = {}
+  end
+
+  def get_workout(workout_name)
+    general = YAML::load_file("config/workouts/general.yml")
+    override = YAML::load_file("config/workouts/#{workout_name}.yml")
+
+    pp override
+    workout = {"fast" => (general["fast"] + override["fast"]).uniq,
+               "slow" => (general["slow"] + override["slow"]).uniq}
+
+    pp workout
+
+    workout
   end
 
   def say(text)
