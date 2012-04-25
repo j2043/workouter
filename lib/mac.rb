@@ -13,8 +13,9 @@ class Workouter
   end
 
   def get_workout(workout_name)
-    general = YAML::load_file("config/workouts/general.yml")
     override = YAML::load_file("config/workouts/#{workout_name}.yml")
+    parent_name = override['inherits']
+    general = YAML::load_file("config/workouts/#{parent_name}.yml")
 
     pp override
     workout = {"fast" => (general["fast"] + override["fast"]).uniq,
@@ -27,7 +28,7 @@ class Workouter
 
   def say(text)
     puts text
-    system("say \"#{text}\"")
+    system("say -v 'victoria'  \"#{text}\"")
   end
 
   def do_segment(activity, interval=30)

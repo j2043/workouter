@@ -1,5 +1,4 @@
-circuits: 10
-
+inherits: general
 fast:
  - jumping jacks
  - rowing

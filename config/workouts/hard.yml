@@ -1,34 +1,5 @@
-circuits: 10
-
+inherits: general
 fast:
- - push ups
- - dead bugs
- - bicycle kicks
- - burpiees
- - mountain climbers
- - ball lift transfer
- - sumo squats
- - left arm elbows
- - right arm elbows
- - lunges
- - backward lunges
- - left clappers
- - right clappers
- - center clappers
- - jump squats
- - arm haulers
+ - push ups 
 slow:
- - knee elbows
- - middle crunches
- - left crunches
- - right crunches
- - left plank
- - right plank
- - leg lifts
- - left hip dip
- - right hip dip
- - kicking 
- - leg v lift
- - feet on ground crunch
- - squats
- - floor touches
+ - jumping jacks

@@ -1,5 +1,3 @@
-circuits: 10
-
 fast:
  - push ups
  - dead bugs
@@ -19,6 +17,9 @@ fast:
  - arm haulers
  - wide arm pushups
  - jump lunges
+ - left lunges
+ - right lunges
+ - pulse ups
 slow:
  - knee elbows
  - middle crunches
